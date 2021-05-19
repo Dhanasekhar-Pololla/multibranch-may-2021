@@ -1,15 +1,15 @@
 pipeline{
   agent any
   stages{
-    stage('dev-deploy'){
+    stage('dev-deploy'){ 
       when {
         branch "dev"
       }
       steps{
         echo "deploy to dev environment"
       }
-    }
-    stage('uat-deploy'){
+    } 
+      stage('uat-deploy'){
       when {
         branch "uat"
       }
